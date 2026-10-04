@@ -1,0 +1,16 @@
+# Rust
+/target/
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# RustRover
+*.iml

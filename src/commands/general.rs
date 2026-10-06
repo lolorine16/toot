@@ -1,6 +1,11 @@
 use serenity::all::{
-    CommandInteraction, Context, CreateInteractionResponse, CreateInteractionResponseMessage,
+    CommandInteraction, Context, CreateCommand, CreateInteractionResponse,
+    CreateInteractionResponseMessage,
 };
+
+pub fn register_ping() -> CreateCommand {
+    CreateCommand::new("ping").description("Respond w Pong!")
+}
 
 pub async fn ping(ctx: &Context, command: &CommandInteraction) {
     let response = CreateInteractionResponse::Message(
